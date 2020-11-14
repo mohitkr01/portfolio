@@ -2,8 +2,10 @@ export const projects = [
     {
         title: 'React Portfolio',
         images: [
-            'https://i.ibb.co/df557nk/Screenshot-5.png',
-            'https://i.ibb.co/M5kSTNB/Screenshot-6.png',
+            'https://drive.google.com/file/d/1C1c0TzkCCjachD7MS5gVd3-kOGAr4DHw/view?usp=sharing',
+            'https://drive.google.com/file/d/17Kaa4o24w6MtPaaCbRAD4NN-ez_5z4ox/view?usp=sharing',
+        //      'https://github.com/mohitkr01/portfolio/blob/master/src/assets/Screenshot2.png',
+        //     'https://github.com/mohitkr01/portfolio/blob/master/src/assets/Screenshot1.png',
         ],
         sourceCodeLink: 'https://github.com/TheCoderDream/react-portfolio',
         demoLink: 'https://dashboard.heroku.com/apps/mohitsportfolio',
