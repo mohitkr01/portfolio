@@ -12,14 +12,14 @@ const SocialLinks = () => {
                 url={'https://www.linkedin.com/in/mohit-kumar-13a77253/'}
                 type={'linkedin'}
             />
-            <SocialLinks.Link
-                url={'https://t.me/emre6askan'}
+            {/* <SocialLinks.Link
+                url={''}
                 type={'telegram'}
             />
             <SocialLinks.Link
-                url={'https://join.skype.com/invite/b7GMpyT187y8'}
+                url={''}
                 type={'skype'}
-            />
+            /> */}
         </div>
     );
 };
