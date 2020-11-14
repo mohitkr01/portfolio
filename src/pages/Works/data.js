@@ -6,20 +6,20 @@ export const projects = [
             'https://i.ibb.co/M5kSTNB/Screenshot-6.png',
         ],
         sourceCodeLink: 'https://github.com/TheCoderDream/react-portfolio',
-        demoLink: 'https://emrebaskan.netlify.app/',
+        demoLink: 'https://dashboard.heroku.com/apps/mohitsportfolio',
         type: 'react'
     },
-    {
-        title: 'React Ecommerce App With Redux',
-        images: [
-            'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png',
-            'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm2-2.png',
-            'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm4.png'
-        ],
-        sourceCodeLink: 'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux',
-        demoLink: 'http://numberless-leg.surge.sh/',
-        type: 'react'
-    },
+    // {
+    //     title: 'React Ecommerce App With Redux',
+    //     images: [
+    //         'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm1-1.png',
+    //         'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm2-2.png',
+    //         'https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/raw/master/ecm4.png'
+    //     ],
+    //     sourceCodeLink: 'https://github.com/TheCoderDream/React-Ecommerce-App-with-Redux',
+    //     demoLink: 'http://numberless-leg.surge.sh/',
+    //     type: 'react'
+    // },
     {
         title: 'Vue Ecommerce App With Vuex',
         images: [
@@ -42,19 +42,19 @@ export const projects = [
         demoLink: 'http://delirious-coast.surge.sh/',
         type: 'angular'
     },
-    {
-        title: 'React Chat App With Redux And Firebase',
-        images: [
-            'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_31.png',
-            'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_27.png',
-            'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_28.png',
-            'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_24.png',
-            'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_25.png'
-        ],
-        sourceCodeLink: 'https://github.com/TheCoderDream/React-Chat-App-With-Redux-And-Firebase',
-        demoLink: 'https://react-chat-appp.netlify.app/',
-        type: 'react'
-    },
+    // {
+    //     title: 'React Chat App With Redux And Firebase',
+    //     images: [
+    //         'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_31.png',
+    //         'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_27.png',
+    //         'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_28.png',
+    //         'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_24.png',
+    //         'https://github.com/TheCodersDream/Angular-Chat-App/raw/master/Screenshot_25.png'
+    //     ],
+    //     sourceCodeLink: 'https://github.com/TheCoderDream/React-Chat-App-With-Redux-And-Firebase',
+    //     demoLink: 'https://react-chat-appp.netlify.app/',
+    //     type: 'react'
+    // },
     {
         title: 'Angular Chat app',
         images: [

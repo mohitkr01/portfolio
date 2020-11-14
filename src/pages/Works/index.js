@@ -24,9 +24,9 @@ const Works = () => {
             <WorksMenu
                 items={[
                     'react',
-                    'angular',
-                    'vue',
-                    'js'
+                    // 'angular',
+                    // 'vue',
+                    // 'js'
                 ]}
                 selected={selectedType}
                 clicked={handleMenuChange}
