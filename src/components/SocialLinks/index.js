@@ -14,12 +14,20 @@ const SocialLinks = () => {
             />
             {/* <SocialLinks.Link
                 url={''}
-                type={'telegram'}
-            />
-            <SocialLinks.Link
-                url={''}
                 type={'skype'}
             /> */}
+            {/* <SocialLinks.Link
+                url={''}
+                type={'telegram'}
+            /> */}
+            <SocialLinks.Link
+                url={'https://www.facebook.com/mohitbarawal/'}
+                type={'facebook'}
+            />
+            <SocialLinks.Link
+                url={'https://www.instagram.com/mohit_kr_mk/?fbclid=IwAR0AvydwLGtIZ-9S1J7sa1bJIFedSuylkR2RH_boXuMmUoRe336jdinYVhA'}
+                type={'instagram'}
+            /> 
         </div>
     );
 };
