@@ -8,7 +8,7 @@ const Menu = () => {
         <ul className="menu">
             <Menu.Item
                 name={"person"}
-                link="/about"
+                link="/#about"
             >
                 About
             </Menu.Item>
