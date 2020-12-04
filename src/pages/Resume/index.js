@@ -23,7 +23,7 @@ const Resume = () => {
                 logo={skillflarelogo}
             >
                 Project Name – <b>Qozo </b> based on React, GraphQL, Dynamo DB, Serverless Architecture, AWS <br />
-               <a href={'https://qozo.io/'} target="_blank">Website</a> & <a href={'https://dev.qozo.io/'} target="_blank">Another Product </a><br />
+               {/* <a href={'https://qozo.io/'} target="_blank">Website</a> & <a href={'https://dev.qozo.io/'} target="_blank">Another Product </a><br /> */}
                 ●	Working on front-end with extensive use of React and native JavaScript for developing SPA. <br />
                 
             </ResumeItem>

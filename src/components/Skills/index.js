@@ -14,7 +14,8 @@ const Skills = () => {
 
     return (
         <div className="skills">
-            <h6>Skills</h6>
+            <h4>Try to click on any of the SKILLS below</h4>
+            {/* <h5>Skills</h5> */}
             <ul onMouseEnter={stopThemeChangeTimer}
                 onMouseLeave={startThemeChangeTimer}
                 onMouseOver={handleMouseEnter} >
