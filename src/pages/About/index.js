@@ -18,7 +18,7 @@ const About = () => {
                         the development cycle for dynamic website, static website, mobile application.
                         <br /> <br />
                         Self-taught, self-driven, passionate learner and developer focusing and Well-versed in numerous
-                        programming languages including HTML5, CSS3, MySQL, NodeJS, Angular, MongoDB,
+                        programming languages including HTML5, CSS3, MySQL, Graph QL, NodeJS, Angular, React, MongoDB,
                         Core Java, Python, SAP Fiori/Ui5, Wordpress, PHP. Strong background in project
                         management and customer relations. Looking forward to working with ingenious teams on challenging projects.
                         <br /> <br />
