@@ -14,7 +14,7 @@ const Skills = () => {
 
     return (
         <div className="skills">
-            <h4>Try to move cursor below on skills</h4>
+            <h4>Try to Click/Move cursor below on skills</h4>
             {/* <h5>Skills</h5> */}
             <ul onMouseEnter={stopThemeChangeTimer}
                 onMouseLeave={startThemeChangeTimer}
