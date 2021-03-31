@@ -36,7 +36,7 @@ const Profile = () => {
                 <Skills />
             </div>
             <div className="profile__contact">
-                <a href="https://drive.google.com/file/d/1ilLJgrnG1BYhVV2a_8pX4JxMidxftCD3/view?usp=sharing" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1_nzL8hsMjEOeEt5r9SUUtY91JEapIeUq/view?usp=sharing" target="_blank" rel="noreferrer">
                     <span>
                         Download CV
                         </span>
