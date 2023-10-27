@@ -5,21 +5,43 @@ import "./index.scss";
 import ResumeItem from "./Item";
 import cpwdlogo from "../../assets/cpwd-logo.png";
 import skillflarelogo from "../../assets/skillflare-logo.png";
-import mckinsollogo from "../../assets/mckinsol-logo.png";
 import omlogo from "../../assets/om.jpg";
 import nimslogo from "../../assets/nims.png";
 import ambplogo from "../../assets/ambp.jpeg";
 import dmilogo from "../../assets/dmi.png";
+import neclogo from "../../assets/nec.png";
 
 const Resume = () => {
   return (
     <div className="page" id="resume">
       <Title icon={"fa fa-briefcase"}>
         Resume - Total Commercial Experience{" "}
-        {moment().diff("09/03/2017", "years", true).toFixed(2)} years
+        {moment().diff("09/09/2017", "years", true).toFixed(2)} years
       </Title>
       <ResumeItem
-        date={"Feb 2021 - Present"}
+        date={"Oct 2022 - Present"}
+        title={"Senior Software Engineer"}
+        company={"NEC Corporation India"}
+        logo={neclogo}
+      >
+        <b>Client Name – BanQsoft Credit Management</b> <br />
+        Project Name – <b>Ledger </b> based on Web application. Technology - ReactTS, 
+        GraphQL, Git, ES6, HTML5, CSS3, Material Design MUI, Cypress<br />
+        <a href={"https://www.banqsoft.com/"} target="_blank">
+          Website
+        </a>{" "}
+        <br />
+        ● Worked extensively on web application consisting of ReactTS, calling APIs by GraphQL for developing modules. <br />
+        ● Written the assertions to test the modules by Cypress. <br />
+        ● Develop UI/UX using ReactTS with MUI, based on prototypes shared by Client. <br />
+        ● Estimation, designing, development, bug-fixing of modules to ensure smooth delivery in agile
+methodology. <br />
+        ● Collaborating with team members to ensure proper integration.{" "}
+        <br />
+        </ResumeItem>
+
+      <ResumeItem
+        date={"Feb 2021 - Sept 2022"}
         title={"Senior Software Engineer"}
         company={"DMINC"}
         logo={dmilogo}
@@ -30,37 +52,28 @@ const Resume = () => {
         <a href={"https://pitstopusa.myvtex.com/"} target="_blank">
           Website
         </a>{" "}
-        {/* &{" "} */}
-        {/* <a href={"https://dev.qozo.io/"} target="_blank">
-          Another Product{" "}
-        </a> */}
-        {/* asd */}
         <br />
         ● Worked extensively on ReactJS, native JS and GraphQL APIs for
         developing modules. <br />
         ● Develop UI/UX using ReactJS based on prototypes. <br />
         ● Estimation, designing, development, bug-fixing of modules to ensure
         smooth delivery. <br />
-        ● Collaborating with other teams to ensure proper integration. <br />
-        ● Bug fixing and maintenance to ensure smooth delivery of the product.{" "}
+        ● Collaborating with other teams to ensure proper integration. <br />●
+        Bug fixing and maintenance to ensure smooth delivery of the product.{" "}
         <br />
         ● Worked on the Data Migration with the help of ETL Tool.
         <br />
         <br />
         <br />
         <br />
-        Project Name – <b>Award Platform</b> based on NodeJS, MySQL, Angular, Git, ES6, HTML5,
-CSS3, Bootstrap, Material Design <br />
-        <a
-          href={"https://annualawards.dminc.com"}
-          target="_blank"
-        >
+        Project Name – <b>Award Platform</b> based on NodeJS, MySQL, Angular,
+        Git, ES6, HTML5, CSS3, Bootstrap, Material Design <br />
+        <a href={"https://annualawards.dminc.com"} target="_blank">
           Website
         </a>{" "}
         <br />
-        ● Worked extensively on the project consisting of Node JS and MYSQL for developing modules. <br />
-        ● Created the Rest APIs for the platform.
-        
+        ● Worked extensively on the project consisting of Node JS and MYSQL for
+        developing modules. <br />● Created the Rest APIs for the platform.
       </ResumeItem>
       <ResumeItem
         date={"Sep 2020 - Jan 2021"}
@@ -93,12 +106,29 @@ CSS3, Bootstrap, Material Design <br />
         <br />
         ● Bug fixing and maintenance to ensure smooth delivery of the product.
         <br />
+        <br />
+        <br />
+        <br />
+        Project Name – <b>Chatbot </b> based on Artificial Intelligence based on Python, Flask, NLTK, Angular, MongoDB, Git.
+        <br />
+        <a href={""} target="_blank">
+          Website
+        </a>{" "}
+        <br />
+        ● Extensively worked on backend technologies like Python, Flask, NLTK, MongoDB.
+        <br />
+        ● Bug fixing and maintenance of the product.
+        <br />
+        ● Implemented the third party ZOOM API for Video conferencing as per the user`s convenient time and
+Twilio API for IVR, if user would like to contact our Customer support as like Conference call immediately.
+        <br />
+        <br />
       </ResumeItem>
       <ResumeItem
-        date={"Nov 2018 – Aug 2020"}
-        title={"Software Developer"}
-        company={"McKinsol Consulting Inc."}
-        logo={mckinsollogo}
+        date={"Sep 2017 – Aug 2020"}
+        title={"Java Developer"}
+        company={"OM Associates"}
+        logo={omlogo}
       >
         Project Name – <b>SPOT (Sales and Promotion Optimization tools)</b>{" "}
         based on Hybrid Mobile Application and web application technology –
@@ -155,29 +185,6 @@ CSS3, Bootstrap, Material Design <br />
         <br />
         <br />
         <br />
-        Project Name – <b>Chatbot </b> based on SAP Fiori/Ui5
-        <br />
-        <a href={"https://mckinsol.com"} target="_blank">
-          Website
-        </a>{" "}
-        <br />
-        ● Setup the account with SAP Team and their configuration also.
-        <br />
-        ● Written code for GUI as per the requirement based on XML.
-        <br />
-        ● Using SAP Hana Cockpit server.
-        <br />
-        ● Configuration of Cloud Connector in local environment.
-        <br />
-        ● Calling the API with the help of O-Data.
-        <br />
-      </ResumeItem>
-      <ResumeItem
-        date={"Sep 2017 – Oct 2018"}
-        title={"Java Developer"}
-        company={"OM Associates"}
-        logo={omlogo}
-      >
         Project Name – <b>VAPOR (Hybrid Mobile Application) </b> based on React
         Native , Node JS, Express JS, MongoDB. <br />
         <a href={"https://vaporinterface.com"} target="_blank">
@@ -227,29 +234,6 @@ CSS3, Bootstrap, Material Design <br />
         <br />
         ● Other duties may also be assigned.
         <br />
-      </ResumeItem>
-      <ResumeItem
-        classNames={"not-last"}
-        date={"Mar 2017 – Sept 2017"}
-        title={"IT Assistant"}
-        company={"CPWD"}
-        logo={cpwdlogo}
-      >
-        ● Develop project concepts and maintain optimal workflow.
-        <br />
-        ● Maintained the GUI Part and made the changes as per the Client
-        requirement.
-        <br />
-        ● Made APIs based on the Core Java with the help of MySQL Database.
-        <br />
-        ● Work with senior developer to manage large, complex design projects
-        for corporate clients.
-        <br />
-        ● Complete detailed programming and development tasks for front end
-        public and internal websites as well as challenging back-end server
-        code.
-        <br />
-        ● Built RESTFul web services consume them using Angular JS. <br />
       </ResumeItem>
       <Title icon={"fa fa-university"}>Education</Title>
       <ResumeItem

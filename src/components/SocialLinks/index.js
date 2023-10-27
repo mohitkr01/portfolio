@@ -25,7 +25,7 @@ const SocialLinks = () => {
                 type={'facebook'}
             />
             <SocialLinks.Link
-                url={'https://www.instagram.com/mohit_krmk44/'}
+                url={'https://www.instagram.com/mohit_krmk/'}
                 type={'instagram'}
             /> 
         </div>

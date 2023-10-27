@@ -14,7 +14,7 @@ const Profile = () => {
         <div className="profile">
             <div className="profile__banner">
                 <div className={`profile__photo ${animation}`} style={{ backgroundImage: `url(${backgroundImage})` }} />
-                <img src="https://skillflare.co.in/mohit/mohit/personal/assets/mohitprofile.jpg" alt={type} />
+                <img src="https://drive.google.com/uc?export=view&id=1SvR6GQFOXZy53lFaAHHZJZ04Y2OfC_bb" alt={type}/>   
             </div>
             <div className="profile__content">
                 <div className="profile__title">
@@ -25,6 +25,7 @@ const Profile = () => {
                         [
                             'Senior Software Engineer',
                             'Senior Full Stack Developer',
+                            'Senior Software Developer',
                             'Senior Backend Developer'
                         ]
                     }
@@ -36,7 +37,7 @@ const Profile = () => {
                 <Skills />
             </div>
             <div className="profile__contact">
-                <a href="https://drive.google.com/file/d/1oAfEq5luIaYquZ3uq3ARYWNdlbR8LprL/view?usp=share_link" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/143UAZhDUYHvhFuGQCS9MtFhcdiJN1Qva/view?usp=share_link" target="_blank" rel="noreferrer">
                     <span>
                         Download CV
                         </span>
