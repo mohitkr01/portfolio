@@ -28,7 +28,8 @@ const Menu = () => {
                 name={'at'}
                 link="/contact"
             >
-                Contact
+                Contact 
+                (Must try)
             </Menu.Item>
         </ul>
     );
