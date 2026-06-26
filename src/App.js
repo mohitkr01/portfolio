@@ -11,6 +11,22 @@ import BackToTop from './components/BackToTop';
 
 function App() {
   useEffect(() => {
+    const savedY = parseInt(sessionStorage.getItem('scrollY') || '0', 10);
+
+    // Bypass css scroll-behavior: smooth so restoration is instant
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo(0, savedY);
+
+    requestAnimationFrame(() => {
+      window.scrollTo(0, savedY); // second pass after first paint
+      requestAnimationFrame(() => {
+        document.documentElement.style.scrollBehavior = ''; // re-enable smooth
+      });
+    });
+
+    const saveScroll = () => sessionStorage.setItem('scrollY', String(window.scrollY));
+    window.addEventListener('beforeunload', saveScroll);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
@@ -25,7 +41,10 @@ function App() {
     const elements = document.querySelectorAll('.reveal');
     elements.forEach(el => observer.observe(el));
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('beforeunload', saveScroll);
+    };
   }, []);
 
   return (
