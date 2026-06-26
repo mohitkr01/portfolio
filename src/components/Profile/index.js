@@ -14,7 +14,7 @@ const Profile = () => {
         <div className="profile">
             <div className="profile__banner">
                 <div className={`profile__photo ${animation}`} style={{ backgroundImage: `url(${backgroundImage})` }} />
-                <img src="https://drive.google.com/uc?export=view&id=1SvR6GQFOXZy53lFaAHHZJZ04Y2OfC_bb" alt={type}/>   
+                <img src="https://drive.google.com/file/d/1yNNoCmPibNDHCLR9E7enXtti9sUu2kPE/view?usp=share_link" alt={type}/>   
             </div>
             <div className="profile__content">
                 <div className="profile__title">
@@ -23,10 +23,10 @@ const Profile = () => {
                 <TypedText
                     dataText={
                         [
+                            'Senior Consultant',
+                            'Full Stack Developer (MERN)',
                             'Senior Software Engineer',
-                            'Senior Full Stack Developer',
-                            'Senior Software Developer',
-                            'Senior Backend Developer'
+                            'Senior Full Stack Developer'
                         ]
                     }
                 />
@@ -37,7 +37,7 @@ const Profile = () => {
                 <Skills />
             </div>
             <div className="profile__contact">
-                <a href="https://drive.google.com/file/d/143UAZhDUYHvhFuGQCS9MtFhcdiJN1Qva/view?usp=share_link" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1Ns97g-GT1CRJxwtlMifnf33pvF0Io_8X/view?usp=share_link" target="_blank" rel="noreferrer">
                     <span>
                         Download CV
                         </span>

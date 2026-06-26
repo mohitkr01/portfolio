@@ -3,10 +3,8 @@ import moment from "moment";
 import Title from "../common/Title";
 import "./index.scss";
 import ResumeItem from "./Item";
-import cpwdlogo from "../../assets/cpwd-logo.png";
 import skillflarelogo from "../../assets/skillflare-logo.png";
 import omlogo from "../../assets/om.jpg";
-import nimslogo from "../../assets/nims.png";
 import ambplogo from "../../assets/ambp.jpeg";
 import dmilogo from "../../assets/dmi.png";
 import neclogo from "../../assets/nec.png";
@@ -16,241 +14,194 @@ const Resume = () => {
     <div className="page" id="resume">
       <Title icon={"fa fa-briefcase"}>
         Resume - Total Commercial Experience{" "}
-        {moment().diff("09/09/2017", "years", true).toFixed(2)} years
+        {moment().diff("09/01/2018", "years", true).toFixed(2)} years
       </Title>
+
       <ResumeItem
-        date={"Oct 2022 - Present"}
+        date={"Jul 2025 – Present"}
+        title={"Senior Consultant"}
+        company={"Emids Technologies Pvt Ltd"}
+      >
+        <b>Client: Hansei</b> &nbsp;|&nbsp; Project: <b>BENJI</b><br />
+        <i>Technology: ReactJS, Node.js, Express.js, MongoDB, REST APIs, Figma-to-Code Implementation</i>
+        <br /><br />
+        ● Own end-to-end development of BENJI, a healthcare-sector solutions portal, from requirement
+        analysis through deployment.<br />
+        ● Translate Figma designs into responsive, pixel-accurate UI components for web and application
+        modules.<br />
+        ● Design and integrate RESTful APIs to power core application workflows and third-party service
+        connections.<br />
+        ● Collaborate with design, product, and QA teams to ensure accurate design-to-code translation
+        and timely release cycles.<br />
+        ● Implemented secure OTP-based email validation, displaying appointment details to the user only
+        upon successful verification.
+      </ResumeItem>
+
+      <ResumeItem
+        date={"Nov 2022 – Jul 2025"}
         title={"Senior Software Engineer"}
         company={"NEC Corporation India"}
         logo={neclogo}
       >
-        <b>Client Name – BanQsoft Credit Management</b> <br />
-        Project Name – <b>Ledger </b> based on Web application. Technology - ReactTS, 
-        GraphQL, Git, ES6, HTML5, CSS3, Material Design MUI, Cypress<br />
-        <a href={"https://www.banqsoft.com/"} target="_blank">
-          Website
-        </a>{" "}
+        <b>Client: 7Eleven</b> &nbsp;|&nbsp; Project: <b>EDM (End Device Manager)</b><br />
+        <i>Technology: ReactJS, Next.js, Node.js, Express.js, MongoDB, PgSQL, AWS, ES6, HTML5, CSS3</i>
+        <br /><br />
+        ● Led development of key modules for a device-monitoring web platform used across retail
+        locations.<br />
+        ● Built responsive, reusable UI components using ReactJS and Material UI.<br />
+        ● Developed and maintained RESTful APIs using Node.js and Express.js.<br />
+        ● Participated in Agile ceremonies, contributing to sprint planning, estimation, and delivery.<br />
+        ● Collaborated with cross-functional teams to ensure smooth integration and deployment.<br />
         <br />
-        ● Worked extensively on web application consisting of ReactTS, calling APIs by GraphQL for developing modules. <br />
-        ● Written the assertions to test the modules by Cypress. <br />
-        ● Develop UI/UX using ReactTS with MUI, based on prototypes shared by Client. <br />
-        ● Estimation, designing, development, bug-fixing of modules to ensure smooth delivery in agile
-methodology. <br />
-        ● Collaborating with team members to ensure proper integration.{" "}
+        ★ <b>Oscard Award</b> — 4th Quarter 2024, for Outstanding Performance<br />
+        ★ <b>Consider It Done Award</b> — 4th Quarter 2025<br />
         <br />
-        </ResumeItem>
+
+        <b>Client: NEC America</b> &nbsp;|&nbsp; Project: <b>7-Eleven Retail Product</b><br />
+        <i>Technology: ReactTS, Node.js, Express.js, PowerShell, Serverless, DynamoDB, PgSQL, MongoDB, AWS</i>
+        <br /><br />
+        ● Provided L2/L3 production support, resolving daily escalations and critical bugs for a live
+        retail platform.<br />
+        ● Built automation scripts using PowerShell, Node.js, and PgSQL to improve client-side
+        operational efficiency.<br />
+        ● Collaborated with distributed, cross-time-zone teams to enhance system integration and
+        stability.<br />
+        <br />
+
+        <b>Client: BanQsoft Credit Management</b> &nbsp;|&nbsp; Project: <b>Ledger Web Application</b><br />
+        <i>Technology: ReactJS, Next.js, GraphQL, Serverless, MUI, Cypress, Node.js, Express.js, MongoDB, AWS</i>
+        <br />
+        <a href={"https://www.banqsoft.com/"} target="_blank" rel="noreferrer">Website</a>
+        <br /><br />
+        ● Built core ledger modules using ReactJS and GraphQL, with Cypress for end-to-end test
+        automation.<br />
+        ● Designed UI/UX with Material UI according to stakeholder specifications.<br />
+        ● Drove Agile delivery across design, bug resolution, and integration testing.<br />
+        <br />
+        ★ <b>Vogue Award</b> — Popular Choice in Solutions (Mar 2022)
+      </ResumeItem>
 
       <ResumeItem
-        date={"Feb 2021 - Sept 2022"}
-        title={"Senior Software Engineer"}
-        company={"DMINC"}
+        date={"Feb 2021 – Oct 2022"}
+        title={"Software Engineer"}
+        company={"Pragiti Internet Technologies"}
         logo={dmilogo}
       >
-        Project Name – <b>PitStopUSA</b> based on VTEX Marketplace platform
-        consisting React, GraphQL, NodeJS, Store Framework, TypeScript,
-        Serverless Architecture, AWS <br />
-        <a href={"https://pitstopusa.myvtex.com/"} target="_blank">
-          Website
-        </a>{" "}
+        <b>Client: PitStopUSA</b> &nbsp;|&nbsp; Project: <b>E-Commerce Web Application</b><br />
+        <i>Technology: VTEX Marketplace, ReactJS, Next.js, Store Framework, Node.js, Express.js, Bootstrap</i>
         <br />
-        ● Worked extensively on ReactJS, native JS and GraphQL APIs for
-        developing modules. <br />
-        ● Develop UI/UX using ReactJS based on prototypes. <br />
-        ● Estimation, designing, development, bug-fixing of modules to ensure
-        smooth delivery. <br />
-        ● Collaborating with other teams to ensure proper integration. <br />●
-        Bug fixing and maintenance to ensure smooth delivery of the product.{" "}
+        <a href={"https://pitstopusa.myvtex.com/"} target="_blank" rel="noreferrer">Website</a>
+        <br /><br />
+        ● Built and maintained e-commerce storefront features using VTEX Marketplace and ReactJS.<br />
+        ● Developed custom VTEX applications, including Legacy Order integration and Zaius email-marketing
+        integration.<br />
+        ● Managed data migration using ETL tools, ensuring accurate product and catalog transitions.<br />
+        ● Translated design mockups into responsive, production-ready UI components.<br />
         <br />
-        ● Worked on the Data Migration with the help of ETL Tool.
+        ★ <b>Consider It Done Award</b> — Aug 2022, for Outstanding Performance<br />
         <br />
+
+        <b>Client: Award Platform</b> &nbsp;|&nbsp; Project: <b>Recognition Web Application</b><br />
+        <i>Technology: Node.js, MySQL, Angular, Bootstrap, Material Design</i>
         <br />
-        <br />
-        <br />
-        Project Name – <b>Award Platform</b> based on NodeJS, MySQL, Angular,
-        Git, ES6, HTML5, CSS3, Bootstrap, Material Design <br />
-        <a href={"https://annualawards.dminc.com"} target="_blank">
-          Website
-        </a>{" "}
-        <br />
-        ● Worked extensively on the project consisting of Node JS and MYSQL for
-        developing modules. <br />● Created the Rest APIs for the platform.
+        <a href={"https://annualawards.dminc.com"} target="_blank" rel="noreferrer">Website</a>
+        <br /><br />
+        ● Developed REST APIs using Node.js, integrated with MySQL for data persistence.<br />
+        ● Supported front-end modules in Angular, styled with Bootstrap and Material Design.
       </ResumeItem>
+
       <ResumeItem
-        date={"Sep 2020 - Jan 2021"}
+        date={"Sep 2020 – Jan 2021"}
         title={"Software Engineer"}
         company={"SkillFlare"}
         logo={skillflarelogo}
       >
-        Project Name – <b>Qozo </b> based on React, GraphQL, Dynamo DB,
-        Serverless Architecture, AWS <br />
-        <a href={"https://qozo.io/"} target="_blank">
-          Website
-        </a>{" "}
-        &{" "}
-        <a href={"https://dev.qozo.io/"} target="_blank">
-          Another Product{" "}
-        </a>
+        <b>Client: QOZO</b> &nbsp;|&nbsp; Project: <b>Web Application</b><br />
+        <i>Technology: ReactTS, Node.js, Next.js, Express.js, GraphQL, Serverless, MongoDB, DynamoDB, AWS</i>
         <br />
-        ● Working on front-end with extensive use of React and native JavaScript
-        for developing SPA. <br />
-        Worked extensively on ReactJS, native JS and GraphQL APIs for developing
-        modules. <br />
-        ● Develop UI/UX using ReactJS based on prototypes.
+        <a href={"https://qozo.io/"} target="_blank" rel="noreferrer">Website</a>
+        <br /><br />
+        ● Developed modules using ReactTS and GraphQL within a serverless architecture.<br />
+        ● Integrated front-end components with backend services and third-party APIs.<br />
+        ● Provided ongoing development support, resolving issues and implementing enhancements.<br />
+        ● Contributed across the full development lifecycle — implementation, testing, and deployment.<br />
         <br />
-        ● Support to UK Team in Qozo on day to day basis.
-        <br />
-        ● Estimation, designing, development, bug-fixing of modules to ensure
-        smooth delivery.
-        <br />
-        ● Collaborating with other teams to ensure proper integration.
-        <br />
-        ● Bug fixing and maintenance to ensure smooth delivery of the product.
-        <br />
-        <br />
-        <br />
-        <br />
-        Project Name – <b>Chatbot </b> based on Artificial Intelligence based on Python, Flask, NLTK, Angular, MongoDB, Git.
-        <br />
-        <a href={""} target="_blank">
-          Website
-        </a>{" "}
-        <br />
-        ● Extensively worked on backend technologies like Python, Flask, NLTK, MongoDB.
-        <br />
-        ● Bug fixing and maintenance of the product.
-        <br />
-        ● Implemented the third party ZOOM API for Video conferencing as per the user`s convenient time and
-Twilio API for IVR, if user would like to contact our Customer support as like Conference call immediately.
-        <br />
-        <br />
+
+        <b>Client: AI Chatbot</b> &nbsp;|&nbsp; Project: <b>Artificial Intelligence-Based Customer Support Bot</b><br />
+        <i>Technology: Python, Flask, NLTK, Angular, MongoDB, Heroku</i>
+        <br /><br />
+        ● Built back-end chatbot logic using Flask and NLTK for natural language processing.<br />
+        ● Integrated Zoom and Twilio APIs to enable video conferencing and IVR-based customer support.
       </ResumeItem>
+
       <ResumeItem
-        date={"Sep 2017 – Aug 2020"}
-        title={"Java Developer"}
+        date={"Sep 2018 – Aug 2020"}
+        title={"Software Developer"}
         company={"OM Associates"}
         logo={omlogo}
       >
-        Project Name – <b>SPOT (Sales and Promotion Optimization tools)</b>{" "}
-        based on Hybrid Mobile Application and web application technology –
-        Angular , Node JS, Express JS, MongoDB. <br />
-        <a href={"https://spotyourdeal.com/#/home"} target="_blank">
-          Website
-        </a>{" "}
-        And{" "}
-        <a
-          href={
-            "https://play.google.com/store/apps/details?id=com.spot.mckinsol&hl=en_IN"
-          }
-          target="_blank"
-        >
-          Android Application
-        </a>{" "}
-        And{" "}
-        <a
-          href={"https://apps.apple.com/in/app/spotyourdeal/id1491896908"}
-          target="_blank"
-        >
-          iOS Application
-        </a>{" "}
+        <b>Client: SPOT</b> &nbsp;|&nbsp; Project: <b>Sales and Promotion Optimization Tools</b><br />
+        <i>Technology: ReactJS, Node.js, Express.js, MongoDB, Bootstrap, GCP</i>
         <br />
-        ● Support to USA Clients in SPOT (Sales and Promotion Optimization
-        tools) on day to day basis. <br />
-        ● Extensively worked on ReactJS, NodeJS, MongoDB, ExpressJS. <br />
-        ● Implementation of Payment Gateway (Paypal). <br />
-        ● Collaborating with other teams to ensure proper integration of modules
-        and smooth deployment of the product. <br />
+        <a href={"https://spotyourdeal.com/#/home"} target="_blank" rel="noreferrer">Website</a>
+        <br /><br />
+        ● Supported U.S.-based clients with feature development and issue resolution.<br />
+        ● Built core modules using ReactJS, Node.js, Express.js, and MongoDB.<br />
+        ● Developed web and hybrid mobile features, including PayPal payment integration.<br />
+        ● Collaborated across teams to ensure smooth module integration and product deployment.<br />
         <br />
+
+        <b>Client: VAPOR</b> &nbsp;|&nbsp; Project: <b>Hybrid Mobile Application</b><br />
+        <i>Technology: React Native, Node.js, Express.js, MongoDB, Bootstrap</i>
         <br />
+        <a href={"https://vaporinterface.com"} target="_blank" rel="noreferrer">Website</a>
+        <br /><br />
+        ● Managed the end-to-end development lifecycle, from prototyping through deployment.<br />
+        ● Integrated backend logic with UI to ensure robust business-process execution.<br />
         <br />
-        Project Name – <b>Chatbot based on DialogFlow </b> based on Node JS,
-        Express, HTML, CSS, JavaScript. <br />
-        <a
-          href={"https://dashboard.heroku.com/apps/chatbotmohit"}
-          target="_blank"
-        >
-          Website
-        </a>{" "}
+
+        <b>Client: Intellicept</b> &nbsp;|&nbsp; Project: <b>Web Platform</b><br />
+        <i>Technology: WordPress</i>
         <br />
-        ● In house Website development project <br />
-        ● Setup whole project for Chatbot with Frontend as well as Backend.
-        <br />
-        ● Estimation, design and development of various modules.
-        <br />
-        ● Build out the source control query service that queries information in
-        a scalable and efficient manner.
-        <br />
-        ● Implemented NodeJS for the backend
-        <br />
-        ● Ensuring smooth delivery of the project.
-        <br />
-        <br />
-        <br />
-        Project Name – <b>VAPOR (Hybrid Mobile Application) </b> based on React
-        Native , Node JS, Express JS, MongoDB. <br />
-        <a href={"https://vaporinterface.com"} target="_blank">
-          Website
-        </a>{" "}
-        <br />
-        ● In house Website development project <br />● Developed clean,
-        maintainable and highly interactive single page web applications using
-        Javascript, TypeScript, Angular, React, HTML, SASS. <br />
-        ● Responsible for design and development of the web pages from mock-ups
-        (PSD). <br />
-        ● Worked the backend by using Node JS, Express and Mongo DB <br />
-        ● Evaluate and implement new programming languages and technologies.
-        Provide life-cycle management for software and code.
-        <br />
-        ● Creating GUI on the basis of Image provided by client. <br />
-        ● Implementing business logics for them. <br />
-        ● Setup the whole backend project on NodeJS with database of Mongo DB.
-        <br />
-        ● Written the API Logic as per the GUI fields <br />
-        ● Develop the Code as per the requirements.
-        <br />
-        ● Co-ordinate with Client and as per his requirements, made the changes
-        in Frontend and backend APIs respectively. <br />
-        <br />
-        <br />
-        Project Name – <b>Intellicept Website </b> based on Wordpress. <br />
-        <a href={"https://intellicept.com"} target="_blank">
-          Website
-        </a>{" "}
-        <br />
-        ● Build client websites with WordPress.
-        <br />
-        ● Architect, implement, and manage web-based applications, databases,
-        and interfaces from initial architecture through development, test, and
-        deployment
-        <br />
-        ● Design, coordinate, and troubleshoot integrations, components, and
-        infrastructures to run enterprise class website
-        <br />
-        ● Modify existing code as needed.
-        <br />
-        ● Develop themes and plugins.
-        <br />
-        ● Executed and monitored standards for user interfaces page design and
-        graphics development.
-        <br />
-        ● Other duties may also be assigned.
-        <br />
+        <a href={"https://intellicept.com"} target="_blank" rel="noreferrer">Website</a>
+        <br /><br />
+        ● Architected and implemented full-stack features using WordPress.<br />
+        ● Managed backend logic and ensured cross-platform UI/UX compatibility.
       </ResumeItem>
+
       <Title icon={"fa fa-university"}>Education</Title>
+
       <ResumeItem
-        date={"2015 – 2018"}
-        title={"NIMS University"}
-        company={"Delhi"}
-        logo={nimslogo}
+        date={"2022 – 2025"}
+        title={"Bachelor of Computer Application (BCA) — 67%"}
+        company={"IGNOU (Indira Gandhi National Open University)"}
       >
         Bachelor's Degree in Computer Application
       </ResumeItem>
+
       <ResumeItem
-        date={"2012 – 2016"}
-        title={"Ambedkar Institute of Technology"}
-        company={"Delhi"}
+        date={"2012 – 2015"}
+        title={"Diploma in Information Technology and Enabled S&M — 71.57%"}
+        company={"Ambedkar Polytechnic, Delhi"}
         logo={ambplogo}
       >
-        Diploma in Information Technology Enabled Services & Management
+        Diploma in Information Technology Enabled Services &amp; Management
+      </ResumeItem>
+
+      <ResumeItem
+        date={"2012"}
+        title={"12th Standard, Non-Medical — 70.2%"}
+        company={"CBSE"}
+      >
+        Central Board of Secondary Education
+      </ResumeItem>
+
+      <ResumeItem
+        date={"2009"}
+        title={"10th Standard — 72.8%"}
+        company={"CBSE"}
+      >
+        Central Board of Secondary Education
       </ResumeItem>
     </div>
   );

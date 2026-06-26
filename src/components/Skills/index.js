@@ -19,18 +19,13 @@ const Skills = () => {
             <ul onMouseEnter={stopThemeChangeTimer}
                 onMouseLeave={startThemeChangeTimer}
                 onMouseOver={handleMouseEnter} >
-                <li id="react" >React</li>
-                {/* <li id="angular">Angular</li> */}
-                <li id="redux">Redux</li>
-                {/* <li id="vue">Vue</li>
-                <li id="rxjs">Rxjs</li>
-                <li id="ngrx">Ngrx</li> */}
-                <li id="node">NodeJS </li>
-                <li id="javascript">JavaScript</li>
-                <li id="wordpress">Wordpress</li>
+                <li id="react">React.js</li>
+                <li id="node">Node.js</li>
+                <li id="javascript">JavaScript (ES6)</li>
                 <li id="mongodb">MongoDB</li>
-                <li id="php">PHP</li>
-                {/* <li id="python">Python</li> */}
+                <li>Next.js</li>
+                <li>GraphQL</li>
+                <li>AWS</li>
             </ul>
         </div>
     );

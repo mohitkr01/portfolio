@@ -14,17 +14,20 @@ const About = () => {
                         Hi, I am Mohit Kumar
                     </strong>
                     <p>
-                        Software Developer specializing in back end development. Experienced with all stages of
-                        the development cycle for dynamic website, static website, mobile application.
+                        Full Stack Software Developer with 7+ years of overall development experience, including ~5 years
+                        specializing in Full Stack Development (MERN Stack – MongoDB, Express.js, React.js, Node.js).
                         <br /> <br />
-                        Self-taught, self-driven, passionate learner and developer focusing and Well-versed in numerous
-                        programming languages including HTML5, CSS3, MySQL, Graph QL, NodeJS, Angular, React, MongoDB,
-                        Core Java, Python, SAP Fiori/Ui5, Wordpress, PHP. Strong background in project
-                        management and customer relations. Looking forward to working with ingenious teams on challenging projects.
+                        Hands-on across the complete software development lifecycle, from RESTful API design and cloud
+                        deployment (AWS/GCP) to translating Figma designs into production-ready, responsive UI.
+                        Delivered solutions for clients across healthcare, retail, and e-commerce sectors.
                         <br /> <br />
-                        I’m an easy going person that works well with everyone. I enjoy being around different types of people and I like to always challenge myself to improve at everything I do.
+                        Strong track record in Agile delivery, project ownership, peer mentorship, and client
+                        communication. Well-versed in technologies including React.js, Next.js, Node.js, Express.js,
+                        MongoDB, PostgreSQL, GraphQL, AWS, Python, PHP, and more.
                         <br /><br />
-                        I have a great passion for learning languages and exploring the world and also programming. I have always loved technology and programming. And this is my profession now.
+                        I’m an easy-going person who works well with cross-functional teams. I enjoy collaborating
+                        with people from different backgrounds and I always challenge myself to grow as a developer
+                        and as a professional.
                     </p>
                 </div>
             </div>
@@ -34,7 +37,9 @@ const About = () => {
             <div className="row">
                 <div className="column">
                     <p>
-                        I have a deep understanding of how JavaScript works. I strongly believe that having a solid understanding of core technologies allows developers to master at any frameworks.
+                        I have a deep understanding of how JavaScript works. I strongly believe that having a solid
+                        understanding of core technologies allows developers to master any framework. Building
+                        scalable, maintainable, and user-friendly software is what drives me every day.
                     </p>
                 </div>
             </div>
