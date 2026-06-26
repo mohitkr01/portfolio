@@ -8,6 +8,7 @@ import Resume from './pages/Resume';
 import Works from './pages/Works';
 import Contact from './pages/Contact';
 import BackToTop from './components/BackToTop';
+import BgAnimation from './components/BgAnimation';
 
 function App() {
   useEffect(() => {
@@ -49,6 +50,7 @@ function App() {
 
   return (
     <div className="app">
+      <BgAnimation />
       <Navbar />
       <Hero />
       <About />

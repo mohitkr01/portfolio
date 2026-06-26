@@ -1,0 +1,96 @@
+.bg-anim {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-anim__bubble {
+  position: absolute;
+  bottom: -120px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: bubble-rise-right linear infinite;
+
+  &--left  { animation-name: bubble-rise-left;  }
+  &--right { animation-name: bubble-rise-right; }
+
+  // ── tiny specks — just a faint dot ───────────────────────
+  &--tiny {
+    background: var(--primary);
+    opacity: 0;
+    box-shadow: 0 0 4px var(--primary);
+    border: none;
+  }
+
+  // ── small — hollow ring ───────────────────────────────────
+  &--sm {
+    background: transparent;
+    border: 1px solid var(--primary-border);
+  }
+
+  // ── medium — soft fill + ring ─────────────────────────────
+  &--md {
+    background: var(--primary-glow);
+    border: 1px solid var(--primary-border);
+    box-shadow: 0 0 10px var(--primary-glow);
+  }
+
+  // ── large — visible glow, breathes ───────────────────────
+  &--lg {
+    background: var(--primary-glow);
+    border: 1px solid var(--primary-border);
+    box-shadow: 0 0 18px var(--primary-glow), inset 0 0 12px var(--primary-glow);
+    animation-name: bubble-rise-left-pulse;
+
+    &.bg-anim__bubble--right { animation-name: bubble-rise-right-pulse; }
+  }
+
+  // ── xl — barely visible, very slow giants ─────────────────
+  &--xl {
+    background: var(--primary-dim);
+    border: 1px solid var(--primary-border);
+    box-shadow: 0 0 30px var(--primary-glow), inset 0 0 20px var(--primary-glow);
+    animation-name: bubble-rise-left-pulse;
+
+    &.bg-anim__bubble--right { animation-name: bubble-rise-right-pulse; }
+  }
+}
+
+// ── Keyframes ─────────────────────────────────────────────────
+
+@keyframes bubble-rise-left {
+  0%   { transform: translateY(0)     translateX(0);    opacity: 0;   }
+  8%   {                                                opacity: 0.55; }
+  88%  {                                                opacity: 0.2; }
+  100% { transform: translateY(-108vh) translateX(-70px); opacity: 0; }
+}
+
+@keyframes bubble-rise-right {
+  0%   { transform: translateY(0)     translateX(0);    opacity: 0;   }
+  8%   {                                                opacity: 0.55; }
+  88%  {                                                opacity: 0.2; }
+  100% { transform: translateY(-108vh) translateX(70px); opacity: 0;  }
+}
+
+// large / xl — rise + pulse scale
+@keyframes bubble-rise-left-pulse {
+  0%   { transform: translateY(0)      translateX(0)    scale(1);    opacity: 0;    }
+  8%   {                                                              opacity: 0.45; }
+  30%  { transform: translateY(-30vh)  translateX(-20px) scale(1.08);               }
+  55%  { transform: translateY(-55vh)  translateX(-40px) scale(0.94);               }
+  80%  { transform: translateY(-80vh)  translateX(-60px) scale(1.05);               }
+  92%  {                                                              opacity: 0.15; }
+  100% { transform: translateY(-108vh) translateX(-80px) scale(1);   opacity: 0;    }
+}
+
+@keyframes bubble-rise-right-pulse {
+  0%   { transform: translateY(0)      translateX(0)    scale(1);    opacity: 0;    }
+  8%   {                                                              opacity: 0.45; }
+  30%  { transform: translateY(-30vh)  translateX(20px)  scale(1.08);               }
+  55%  { transform: translateY(-55vh)  translateX(40px)  scale(0.94);               }
+  80%  { transform: translateY(-80vh)  translateX(60px)  scale(1.05);               }
+  92%  {                                                              opacity: 0.15; }
+  100% { transform: translateY(-108vh) translateX(80px)  scale(1);   opacity: 0;    }
+}
