@@ -1,74 +1,147 @@
-# Getting Started with Create React App
+# Mohit Kumar — Portfolio
 
-1. npm run build
+Personal portfolio built with React 18, SCSS, EmailJS, and Firebase Hosting.
 
-2. npm start
+Live site: https://mohitportfolio-7a6c0.web.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+- React 18 (Create React App)
+- SCSS Modules
+- EmailJS — contact form
+- Firebase Hosting — deployment
+- Font Awesome 5 (CDN)
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Local Development
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+npm start
+```
 
-### `yarn test`
+Opens at `http://localhost:3000`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## Deploying to Firebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### First-time setup (do once per machine)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**1. Check Node.js version**
+```bash
+node --version
+```
+Must be v18 or higher.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**2. Install Firebase CLI (compatible with Node 18)**
+```bash
+npm install -g firebase-tools@11.30.0
+```
 
-### `yarn eject`
+> Note: Firebase CLI v13+ requires Node 20+. Until Node is upgraded on this machine, use v11.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**3. Log in to Firebase**
+```bash
+firebase login
+```
+A browser window opens — sign in with `mohitbarawal@gmail.com` and approve all permissions.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**4. Verify the project is accessible**
+```bash
+firebase projects:list
+```
+Should show `mohitportfolio-7a6c0` in the list.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Deploy any branch
 
-## Learn More
+**Step 1 — Switch to the branch you want to deploy**
+```bash
+git checkout <branch-name>
+# e.g. git checkout single-page
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Step 2 — Run the deploy script**
+```bash
+npm run deploy
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This automatically:
+1. Builds the production bundle (`npm run build` → `/build` folder)
+2. Uploads `/build` to Firebase Hosting (`firebase deploy`)
 
-### Code Splitting
+**Step 3 — Open the live site**
+```
+https://mohitportfolio-7a6c0.web.app
+https://mohitportfolio-7a6c0.firebaseapp.com
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> Each deploy replaces whatever branch was live before. Only one version is live at a time.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Preview a branch without overwriting the live site (optional)
 
-### Making a Progressive Web App
+```bash
+firebase hosting:channel:deploy preview-<branch-name>
+# e.g. firebase hosting:channel:deploy preview-single-page
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This creates a temporary URL to test. When satisfied, run `npm run deploy` to go live.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Fix: Re-authenticate if deploy fails
 
-### Deployment
+If you see **"401 Unauthorized"** or **"Failed to get Firebase project"**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+firebase logout
+firebase login
+```
 
-### `yarn build` fails to minify
+Then retry `npm run deploy`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+### Upgrading Node.js (when ready)
+
+Once Node is upgraded to v20+, update Firebase CLI to the latest version:
+
+```bash
+npm install -g firebase-tools
+```
+
+To upgrade Node via Homebrew on this Mac:
+```bash
+# First update Xcode Command Line Tools via System Preferences > Software Update
+# Then:
+brew install node@20
+brew unlink node && brew link node@20 --force
+node --version   # should show v20.x.x
+```
+
+---
+
+## Branches
+
+| Branch | Description |
+|--------|-------------|
+| `master` | Original multi-page version |
+| `single-page` | Redesigned single-page dark theme (currently live) |
+
+---
+
+## npm Scripts
+
+| Script | What it does |
+|--------|-------------|
+| `npm start` | Start dev server on localhost:3000 |
+| `npm run build` | Build production bundle to `/build` |
+| `npm run deploy` | Build + deploy to Firebase (use this to go live) |
+| `npm test` | Run tests (non-watch mode) |
