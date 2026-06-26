@@ -1,19 +1,14 @@
 .typed-text {
-  margin: 0;
   display: inline-block;
-  color: var(--primary-color);
-  font-size: 16px;
-  line-height: 20px;
-  height: 20px;
-  font-weight: 400;
-  z-index: 3;
+  color: var(--primary);
+  font-size: inherit;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 .typed-cursor {
-  width: 2px;
-  color: #0b0b0b;
-  font-size: 16px;
-  line-height: 20px;
-  height: 20px;
-  z-index: 3;
+  color: var(--primary);
+  font-size: inherit;
+  font-weight: 300;
+  opacity: 0.8;
 }

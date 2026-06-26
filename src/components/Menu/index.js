@@ -1,50 +1,51 @@
-import React from 'react';
-import { NavLink } from "react-router-dom";
-import { NavHashLink } from 'react-router-hash-link';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 
-const Menu = () => {
-    return (
-        <ul className="menu">
-            <Menu.Item
-                name={"person"}
-                link="/#about"
-            >
-                About
-            </Menu.Item>
-            <Menu.Item
-                name={"android-list"}
-                link="/resume"
-            >
-                Resume
-            </Menu.Item>
-            <Menu.Item
-                name={'paintbrush'}
-                link="/works"
-            >
-                Works
-            </Menu.Item>
-            <Menu.Item
-                name={'at'}
-                link="/contact"
-            >
-                Contact 
-                (Must try)
-            </Menu.Item>
-        </ul>
-    );
-};
+const navLinks = [
+  { label: 'About',   href: '#about' },
+  { label: 'Skills',  href: '#skills' },
+  { label: 'Resume',  href: '#resume' },
+  { label: 'Works',   href: '#works' },
+  { label: 'Contact', href: '#contact' },
+];
 
-Menu.Item = ({link = '#', children, name }) =>
-    <li>
-        <NavHashLink
-            smooth
-            to={link}
-            activeClassName={'active'}
-            exact>
-            <span className={`icon ion-${name}`} />
-            {children}
-        </NavHashLink>
-    </li>;
+const Menu = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const handleLink = () => setMenuOpen(false);
+
+  return (
+    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+      <div className="navbar__inner">
+        <a href="#hero" className="navbar__logo">
+          <span>M</span>K
+        </a>
+
+        <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
+          {navLinks.map(link => (
+            <li key={link.label}>
+              <a href={link.href} onClick={handleLink}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+
+        <button
+          className={`navbar__hamburger ${menuOpen ? 'navbar__hamburger--open' : ''}`}
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label="Toggle menu"
+        >
+          <span /><span /><span />
+        </button>
+      </div>
+    </nav>
+  );
+};
 
 export default Menu;

@@ -1,44 +1,38 @@
-@import "../../styles/absctract/mixins";
-
 .back-to-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  background: var(--bg-card);
+  border: 1px solid var(--primary-border);
+  border-radius: 50%;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, opacity .5s, visibility .5s;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  bottom: 28px;
+  right: 28px;
   opacity: 0;
   visibility: hidden;
-  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.25s ease, background 0.25s ease;
+  z-index: 999;
   cursor: pointer;
 
   i {
-    color: var(--primary-color);
-    font-size: 30px;
+    color: var(--primary);
+    font-size: 1.1rem;
   }
 
-
-  &:active {
-    color: var(--secondary-color);
+  &:hover {
+    background: var(--primary-dim);
+    transform: translateY(-3px);
   }
 
-  @include respond(tab-port) {
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
 
-    &.show {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    &.hide {
-      opacity: 0;
-      visibility: hidden;
-    }
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
   }
 }
