@@ -47,6 +47,14 @@
     i { color: var(--primary); width: 16px; flex-shrink: 0; }
   }
 
+  &__info-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover { color: var(--primary); }
+  }
+
   &__stats {
     display: grid;
     grid-template-columns: 1fr 1fr;

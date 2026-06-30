@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './index.scss';
 
 const scrollToTop = () => {
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-        window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, c - c / 10);
-    }
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo(0, 0);
+    requestAnimationFrame(() => {
+        document.documentElement.style.scrollBehavior = '';
+    });
 };
 
 const BackToTop = () => {

@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import './index.scss';
 
 const THEMES = [
-  { id: 'green',  bg: '#0a1a0e', bgCard: '#0e2214', primary: '#78cc6d' },
-  { id: 'purple', bg: '#0f0a20', bgCard: '#160e2e', primary: '#a78bfa' },
-  { id: 'blue',   bg: '#071020', bgCard: '#0b182e', primary: '#38bdf8' },
-  { id: 'orange', bg: '#1a0e06', bgCard: '#22130a', primary: '#f97316' },
+  { id: 'green',  bg: '#1a3824', bgCard: '#224830', primary: '#78cc6d' },
+  { id: 'purple', bg: '#1e1240', bgCard: '#281852', primary: '#a78bfa' },
+  { id: 'blue',   bg: '#0e2244', bgCard: '#142c58', primary: '#38bdf8' },
+  { id: 'orange', bg: '#38180a', bgCard: '#48220e', primary: '#f97316' },
 ];
 
 function hexToRgb(hex) {

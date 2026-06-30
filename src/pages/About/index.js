@@ -44,12 +44,12 @@ const About = () => {
                 <span>mohitbarawal@gmail.com</span>
               </div>
               <div className="about__info-item">
-                <i className="fas fa-phone" />
-                <span>+91 888 268 8205</span>
+                <i className="fab fa-whatsapp" />
+                <a href="https://wa.me/918882688205" target="_blank" rel="noreferrer" className="about__info-link">+91 888 268 8205</a>
               </div>
               <div className="about__info-item">
                 <i className="fas fa-globe" />
-                <span>Open to Relocation</span>
+                <span>Open to Relocate</span>
               </div>
             </div>
           </div>

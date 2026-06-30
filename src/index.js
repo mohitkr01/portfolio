@@ -12,10 +12,10 @@ if ('scrollRestoration' in window.history) {
 // Apply saved theme before first paint to avoid colour flash on reload
 (function () {
   const THEMES = {
-    green:  { bg: '#0a1a0e', bgCard: '#0e2214', bgRgb: '10, 26, 14',  primary: '#78cc6d', pRgb: '120, 204, 109' },
-    purple: { bg: '#0f0a20', bgCard: '#160e2e', bgRgb: '15, 10, 32',  primary: '#a78bfa', pRgb: '167, 139, 250' },
-    blue:   { bg: '#071020', bgCard: '#0b182e', bgRgb: '7, 16, 32',   primary: '#38bdf8', pRgb: '56, 189, 248'  },
-    orange: { bg: '#1a0e06', bgCard: '#22130a', bgRgb: '26, 14, 6',   primary: '#f97316', pRgb: '249, 115, 22'  },
+    green:  { bg: '#1a3824', bgCard: '#224830', bgRgb: '26, 56, 36',  primary: '#78cc6d', pRgb: '120, 204, 109' },
+    purple: { bg: '#1e1240', bgCard: '#281852', bgRgb: '30, 18, 64',  primary: '#a78bfa', pRgb: '167, 139, 250' },
+    blue:   { bg: '#0e2244', bgCard: '#142c58', bgRgb: '14, 34, 68',  primary: '#38bdf8', pRgb: '56, 189, 248'  },
+    orange: { bg: '#38180a', bgCard: '#48220e', bgRgb: '56, 24, 10',  primary: '#f97316', pRgb: '249, 115, 22'  },
   };
   const t = THEMES[localStorage.getItem('theme')] || THEMES.green;
   const r = document.documentElement;
