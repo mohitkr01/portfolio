@@ -47,12 +47,14 @@ const ContactForm = () => {
                 setSuccessResult('Thank you! Your message has been successfully sent');
                 window.clarity && window.clarity('event', 'contact_form_success');
                 window.clarity && window.clarity('set', 'contact_sender', values.email);
+                window.gtag && window.gtag('event', 'contact_form_success', { event_category: 'engagement' });
                 setTimeout(() => {
                     setSuccessResult('')
                 }, 5000)
             } catch (e) {
                 setErrorResult('Something went wrong while sending your message!')
                 window.clarity && window.clarity('event', 'contact_form_error');
+                window.gtag && window.gtag('event', 'contact_form_error', { event_category: 'engagement' });
                 setTimeout(() => {
                     setErrorResult('')
                 }, 5000)

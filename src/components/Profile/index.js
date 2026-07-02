@@ -33,7 +33,10 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
               className="btn btn--primary"
-              onClick={() => window.clarity && window.clarity('event', 'cv_download')}
+              onClick={() => {
+                window.clarity && window.clarity('event', 'cv_download');
+                window.gtag && window.gtag('event', 'cv_download', { event_category: 'engagement' });
+              }}
             >
               <i className="fas fa-download" /> Download CV
             </a>
