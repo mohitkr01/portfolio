@@ -33,6 +33,7 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
               className="btn btn--primary"
+              onClick={() => window.clarity && window.clarity('event', 'cv_download')}
             >
               <i className="fas fa-download" /> Download CV
             </a>

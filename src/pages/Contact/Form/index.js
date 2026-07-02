@@ -45,11 +45,14 @@ const ContactForm = () => {
                     'user_TzvJWYi9AHBzKeoGu5A1c');
                 form.resetForm();
                 setSuccessResult('Thank you! Your message has been successfully sent');
+                window.clarity && window.clarity('event', 'contact_form_success');
+                window.clarity && window.clarity('set', 'contact_sender', values.email);
                 setTimeout(() => {
                     setSuccessResult('')
                 }, 5000)
             } catch (e) {
                 setErrorResult('Something went wrong while sending your message!')
+                window.clarity && window.clarity('event', 'contact_form_error');
                 setTimeout(() => {
                     setErrorResult('')
                 }, 5000)
